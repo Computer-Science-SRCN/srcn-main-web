@@ -1,12 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
-/*!
- * Bootstrap v5.1.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -52,7 +47,7 @@
     --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-family: 'Poppins', sans-serif;
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
@@ -179,7 +174,8 @@ h6,
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    font-family: 'Poppins',sans-serief;
 }
 
 abbr[title],
@@ -3217,8 +3213,9 @@ textarea.form-control.is-invalid {
     user-select: none;
     background-color: transparent;
     border: 1px solid transparent;
-    padding: .375rem .75rem;
+    padding: 1.375rem 1.75rem !important;
     font-size: 1rem;
+    font-weight: bold !important;
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
@@ -3248,8 +3245,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #000;
-    background-color: #fed136;
-    border-color: #fed136
+    background-color: #fed136 !important;
+    border-color: #fed136 !important;
 }
 
 .btn-primary:hover {
@@ -12932,3 +12929,119 @@ img::selection {
 img::-moz-selection {
     background: transparent
 }
+
+/* css faq */
+a{
+    text-decoration: none !important;
+}
+.text-secondary {
+    color: #3d5d6f;
+  }
+  
+  .h4,
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .fa,
+  .fas {
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-style: normal;
+  }
+  
+  .right-0 {
+    right: 0;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  a.text-secondary:focus,
+  a.text-secondary:hover {
+    text-decoration: none;
+    color: #22343e;
+  }
+  
+  #accordion .fa-plus {
+    transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  }
+  
+  #accordion a[aria-expanded=true] .fa-plus {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* CSS FAQ end */
+ /* Testimonials CSS */
+
+  
+ .testimonial{
+     margin: 20px 10px 0;
+     position: relative;
+ }
+ .testimonial .pic{
+     padding: 5px;
+     background: #fff;
+     border: 1px solid #d6d6d6;
+     position: absolute;
+     top: -20px;
+     left: 5px;
+     z-index: 1;
+ }
+ .testimonial .description{
+     padding: 30px 45px 30px 60px;
+     margin-left: 34px;
+     border: 1px solid #d6d6d6;
+     font-size: 14px;
+     color: #6d6d6d;
+     line-height: 26px;
+     position: relative;
+ }
+ .testimonial .description:before{
+     content: "";
+     width: 35px;
+     height: 101%;
+     background: #fff;
+     border-left: 1px solid #d6d6d6;
+     position: absolute;
+     top: 0;
+     right: -18px;
+     transform: skewX(-13deg);
+ }
+ .testimonial .testimonial-content{
+     margin: 20px 0 0 34px;
+ }
+ .testimonial .title{
+     display: inline-block;
+     font-size: 14px;
+     color: #FED136;
+ }
+ .testimonial .post{
+     display: block;
+     font-size: 15px;
+     line-height: 20px;
+     margin-top: 2px;
+ }
+ .owl-theme .owl-controls{
+     margin-top: 30px;
+ }
+ .owl-theme .owl-controls .owl-page span{
+     background: #fc6963;
+ }
+ @media only screen and (max-width:990px){
+     .testimonial .description:before{
+         display: none;
+     }
+ }
