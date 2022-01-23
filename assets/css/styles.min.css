@@ -1,1 +1,45 @@
 
+:root{
+    --main-color:#e02f60;
+    --white-alpha-40: rgba(255, 255, 255, 0.4);
+	/* --white-alpha-25: rgba(255,255,255,0.25); */
+	--white-alpha-25: rgba(255, 255, 255, 0.25);
+}
+.general-info li{
+	margin: 0 0 10px;
+	font-weight: 500;
+	text-transform: capitalize;
+    list-style: none;
+}
+.general-info li span{
+	font-weight:300;
+}
+.general-info li a{
+	text-transform: lowercase;
+	color: var(--main-color);
+}
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.skill-item {
+	background-color: var(--white-alpha-25);
+	border: 1px solid var(--white-alpha-40);
+	padding: 5px 15px;
+	text-transform: capitalize;
+	margin: 0 10px 10px 0;
+	border-radius: 12px;
+}
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+}
+.skill-item {
+	background-color: var(--white-alpha-25);
+	border: 1px solid var(--white-alpha-40);
+	padding: 5px 15px;
+	text-transform: capitalize;
+	margin: 0 10px 10px 0;
+	border-radius: 12px;
+}
